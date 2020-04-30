@@ -39,30 +39,8 @@ function readRequestHandler($inputData){
             break;
         case 'getItems':
             getItemsController($inputData);
-            //echo "vegitable sub catogory";
+           
             break;
-        case 'getOneItem':
-            getOneItemController($inputData);
-            break;
-        case 'getAllBuyerRequests':
-            getAllBuyerRequestsController($inputData);
-            break;
-        case 'searchBuyerRequest':
-            searchBuyerRequestsController($inputData);
-            break; 
-        case 'getMyFarmerRequests':
-            getMyFarmerRequestsController($inputData);
-            break;
-        case 'getOneFarmerRequest':
-            getOneFarmerRequestController($inputData);
-            break;
-        case 'getAllFarmerRequests':
-            getAllFarmerRequestsController($inputData);
-            break;
-        case 'getBuyerRequestData':
-            getBuyerRequestDataController($inputData);
-            break;
-       
         default:
             echo 'Invalid request 002';
     }
