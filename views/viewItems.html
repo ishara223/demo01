@@ -1,0 +1,12 @@
+<div class="loginOuter" ng-controller="viewItemsCtrl">
+    <button ng-click="getItems()">check avialable items</button>
+    <p>{{itemName}}</p>
+    <button ng-repeat=" item in items" ng-click="getItem(item.id)">{{item.size}}</button>
+    <div ng-show="showItemInfo">
+        <p>{{itemInfo.name}}</p>
+        <p>{{itemInfo.size}}</p>
+        <p>{{itemInfo.price}}</p>
+        <p>{{itemInfo.discription}}</p>
+        <img style="height: 100px;width:100px; " src="app\php\images\{{itemInfo.img}}">
+    </div>
+</div>
